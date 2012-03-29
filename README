@@ -1,0 +1,30 @@
+PHP Runtime AOP Framework Readme
+
+Notice:
+Code and API are highly experimental and might change, mainly intended  for experimentation and educational use.
+Will update comments, and API details later on, at the moment clean commit
+
+Overview:
+
+The design supports matching of cross-cutting segments using a Join-Point model similar to Aspect-Oriented Programming, binding additional code to be run using delegation and weaving of the aspects at run-time mainly through publish-subscribe methodology.
+
+The Framework provides base classes and certain implemented classes which should be sufficient for basic usage.
+
+For a detailed explanation of the inner-workings of the framework refer to doc.pdf
+
+
+
+Copyright Notice (see COPYING for further information):
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
