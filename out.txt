@@ -1,0 +1,28 @@
+[Before] >  Demo_Account.newInstance(32, 200) orig-args: (32, 200) ->  Null
+[After] >  Demo_Account.newInstance(32, 200) orig-args: (32, 200) ->  Demo_Account
+[Before] >  Demo_Account.wrapInstance(32, 200) orig-args: (32, 200) ->  Null
+[After] >  Demo_Account.wrapInstance(32, 200) orig-args: (32, 200) ->  {Wrapped} Demo_Account
+[Before] >  Demo_Account.debit(100) orig-args: (100) ->  Null
+[After] >  Demo_Account.debit(110) orig-args: (100) ->  1
+[Before] >  Demo_Account.debit(10000) orig-args: (10000) ->  Null
+[After] >  Demo_Account.debit(11000) orig-args: (10000) ->  
+bool(false)
+[Before] >  Demo_Account.credit(6000) orig-args: (6000) ->  Null
+[After] >  Demo_Account.credit(6000) orig-args: (6000) ->  
+bool(false)
+
+[Before] >  Demo_Account.printInfo() orig-args: () ->  Null
+Account #32: $310
+[After] >  Demo_Account.printInfo() orig-args: () ->  Null
+
+[Before] >  Demo_Account.debit(10000) orig-args: (10000) ->  Null
+[After] >  Demo_Account.debit(11000) orig-args: (10000) ->  1
+bool(true)
+[Before] >  Demo_Account.credit(6000) orig-args: (6000) ->  Null
+[After] >  Demo_Account.credit(6000) orig-args: (6000) ->  1
+bool(true)
+
+[Before] >  Demo_Account.printInfo() orig-args: () ->  Null
+Account #32: $5310
+[After] >  Demo_Account.printInfo() orig-args: () ->  Null
+
