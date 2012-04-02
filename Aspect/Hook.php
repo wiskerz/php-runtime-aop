@@ -1,4 +1,5 @@
 <?php
+
 class Aspect_Hook
 {
 	private $_sequence	 = array();
